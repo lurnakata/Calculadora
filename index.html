@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main>
+        <div id="calculadora">
+            <h1>CALCULADORA NKT</h1>
+            <div id="resultado">
+                <input type="text" id="visor" />
+            </div>
+
+            <div id="teclado">
+                <div id="teclado_numerico">
+                    <div class="linha">
+                        <button class="number" value="7" onclick="addElement(value)">7</button>
+                        <button class="number" value="8" onclick="addElement(value)">8</button>
+                        <button class="number" value="9" onclick="addElement(value)">9</button>
+                    </div>
+
+                    <div class="linha">
+                        <button class="number" value="4" onclick="addElement(value)">4</button>
+                        <button class="number" value="5" onclick="addElement(value)">5</button>
+                        <button class="number" value="6" onclick="addElement(value)">6</button>
+                    </div>
+
+                    <div class="linha">
+                        <button class="number" value="1" onclick="addElement(value)">1</button>
+                        <button class="number" value="2" onclick="addElement(value)">2</button>
+                        <button class="number" value="3" onclick="addElement(value)">3</button>
+                    </div>
+
+                    <div class="linha">
+                        <button id="zero" value="0" onclick="addElement(value)">0</button>
+                        <button class="number" value="." onclick="addElement(value)">.</button>
+                    </div>
+                </div>
+
+                <div id="teclado_operacoes">
+                    <div class="linha">
+                        <button class="number" id="clear" onclick="limpar()">C</button>
+                    </div>
+
+                    <div class="linha">
+                        <button class="number" value="/" onclick="addElement(value)">/</button>
+                        <button class="number" value="*" onclick="addElement(value)">*</button>
+                    </div>
+
+                    <div class=" linha">
+                        <div class="linha coluna">
+                            <button class="number" value="-" onclick="addElement(value)">-</button>
+                            <button class="number" id="igual" onclick="calcular()">=</button>
+                        </div>
+                        <button id="soma" value="+" onclick="addElement(value)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
